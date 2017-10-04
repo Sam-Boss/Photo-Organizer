@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="344.0" prefWidth="425.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.EditPhotoController">
+   <children>
+      <Pane prefHeight="383.0" prefWidth="504.0">
+         <children>
+            <ImageView fx:id="im" fitHeight="150.0" fitWidth="200.0" layoutX="252.0" layoutY="39.0" pickOnBounds="true" preserveRatio="true" />
+            <Text layoutX="109.0" layoutY="170.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caption: ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Text>
+            <Text layoutX="100.0" layoutY="225.0" strokeType="OUTSIDE" strokeWidth="0.0" text="People Tags: ">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font></Text>
+            <Label fx:id="cap" layoutX="122.0" layoutY="181.0" text="Label" />
+            <Label fx:id="peopleTags" layoutX="122.0" layoutY="234.0" text="Label" />
+            <Button fx:id="editCap" layoutX="26.0" layoutY="152.0" mnemonicParsing="false" onAction="#editCap" prefHeight="26.0" prefWidth="50.0" text="Edit" />
+            <Button fx:id="editPeopleBtn" layoutX="26.0" layoutY="207.0" mnemonicParsing="false" onAction="#editPeopleTags" prefHeight="26.0" prefWidth="50.0" text="Edit" />
+            <Button fx:id="back" layoutX="296.0" layoutY="311.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Text layoutX="14.0" layoutY="83.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Edit Options:">
+               <font>
+                  <Font size="32.0" />
+               </font>
+            </Text>
+            <Button fx:id="editLocationBtn" layoutX="25.0" layoutY="267.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="50.0" text="Edit" onAction="#editLocationTags"/>
+            <Label fx:id="locationTags" layoutX="122.0" layoutY="294.0" text="Label" />
+            <Text layoutX="102.0" layoutY="286.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Location Tags:">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

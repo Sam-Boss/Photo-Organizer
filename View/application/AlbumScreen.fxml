@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="484.0" prefWidth="571.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AlbumScreenController">
+   <children>
+      <Pane prefHeight="498.0" prefWidth="614.0">
+         <children>
+            <Button fx:id="addPhoto" layoutX="329.0" layoutY="82.0" mnemonicParsing="false" onAction="#addPhoto" prefHeight="27.0" prefWidth="104.0" text="Add Photo" />
+            <Button fx:id="deletePhoto" layoutX="455.0" layoutY="81.0" mnemonicParsing="false" onAction="#deletePhoto" prefHeight="27.0" prefWidth="104.0" text="Delete Photo" />
+            <Button fx:id="movePhoto" layoutX="327.0" layoutY="117.0" mnemonicParsing="false" onAction="#movePhoto" prefHeight="27.0" prefWidth="104.0" text="Move Photo" />
+            <Button fx:id="startSlsh" layoutX="456.0" layoutY="154.0" mnemonicParsing="false" onAction="#slideshow" prefHeight="27.0" prefWidth="104.0" text="SlideShow" />
+            <Button fx:id="back" layoutX="112.0" layoutY="438.0" mnemonicParsing="false" onAction="#backHome" text="Back to Albums" />
+            <ListView fx:id="lv" layoutX="14.0" layoutY="71.0" onMouseClicked="#previewImage" prefHeight="356.0" prefWidth="303.0" />
+            <ImageView fx:id="preview" fitHeight="165.0" fitWidth="227.0" layoutX="334.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true" />
+            <Label fx:id="name" layoutX="14.0" layoutY="14.0" text="Label">
+               <font>
+                  <Font size="47.0" />
+               </font>
+            </Label>
+            <Button fx:id="editPhoto" layoutX="456.0" layoutY="116.0" mnemonicParsing="false" onAction="#editPhoto" prefHeight="27.0" prefWidth="104.0" text="Edit Photo" />
+            <Label fx:id="caption" layoutX="328.0" layoutY="370.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="date" layoutX="328.0" layoutY="400.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="peopleTags" layoutX="328.0" layoutY="429.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="copyPhoto" layoutX="327.0" layoutY="154.0" mnemonicParsing="false" onAction="#copyPhoto" prefHeight="27.0" prefWidth="104.0" text="Copy Photo" />
+            <Label fx:id="locationTags" layoutX="329.0" layoutY="456.0" text="Label">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

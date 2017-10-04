@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchPageController">
+   <children>
+      <Pane layoutY="-69.0" prefHeight="357.0" prefWidth="485.0">
+         <children>
+            <Button fx:id="searchBtn" layoutX="201.0" layoutY="299.0" mnemonicParsing="false" onAction="#search" text="Seach" />
+            <Button fx:id="backBtn" layoutX="14.0" layoutY="83.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+            <Label layoutX="21.0" layoutY="128.0" text="Start Date:" />
+            <Label layoutX="259.0" layoutY="128.0" text="End Date:" />
+            <DatePicker fx:id="startDate" layoutX="21.0" layoutY="153.0" />
+            <DatePicker fx:id="endDate" layoutX="259.0" layoutY="153.0" />
+            <Label layoutX="21.0" layoutY="197.0" text="Location" />
+            <TextField fx:id="locationTxt" layoutX="21.0" layoutY="213.0" />
+            <Label layoutX="259.0" layoutY="197.0" text="People" />
+            <TextField fx:id="peopleTxt" layoutX="259.0" layoutY="213.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreenController">
+   <children>
+      <Pane layoutX="-124.0" layoutY="-118.0" prefHeight="420.0" prefWidth="472.0">
+         <children>
+            <Button fx:id="enter" layoutX="248.0" layoutY="287.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="104.0" text="Login" />
+            <Text layoutX="264.0" layoutY="243.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username:" wrappingWidth="72.21240234375" />
+            <TextField fx:id="username" layoutX="208.0" layoutY="247.0" prefHeight="27.0" prefWidth="178.0" />
+            <Text layoutX="202.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Photos">
+               <font>
+                  <Font name="Hoefler Text Black Italic" size="59.0" />
+               </font>
+            </Text>
+            <Text layoutX="193.0" layoutY="403.0" strokeType="OUTSIDE" strokeWidth="0.0" text="*Created by Hunter Betz and Andrew Boss*">
+               <font>
+                  <Font size="10.0" />
+               </font>
+            </Text>
+         </children></Pane>
+   </children>
+</AnchorPane>
